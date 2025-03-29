@@ -1,3 +1,6 @@
+
+import javax.sound.midi.SysexMessage;
+
 public class Pattern
 {
     private static void pattern1(int N) {
@@ -115,6 +118,23 @@ public class Pattern
             }
             for(int j=0;j<i;j++) {
                 System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+    private static void pattern10(int N) {
+        System.out.println("Printing the *-pattern isosceles triangle of size-"+N+"...");
+        // For the upward triangle..
+        for(int i=1;i<=N;i++) {
+            for(int j=0;j<i;j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        // For the downward-triangle..
+        for(int i=N-1;i>=1;i--) {
+            for(int j=0;j<i;j++) {
+                System.out.print("* ");
             }
             System.out.println();
         }
